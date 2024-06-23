@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-06-23T19:41:28.537481" rpa="false" schemaversion="5">
+<suite id="s1" name="Exam H-Lab" source="C:\Users\thiti\Desktop\Exam H-Lab">
+<suite id="s1-s1" name="Test1" source="C:\Users\thiti\Desktop\Exam H-Lab\test1.robot">
+<test id="s1-s1-t1" name="T002 Enter Lazada website, landing on home page with EN lang" line="29">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-23T19:41:28.787959" level="INFO">Opening browser 'Chrome' to base url 'https://www.lazada.co.th/'.</msg>
+<arg>${URL2}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-23T19:41:28.786960" elapsed="24.241762"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-23T19:41:53.029731" elapsed="0.043639"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-23T19:41:53.075334" level="INFO">Clicking element '//*[@id="topActionSwitchLang"]/span'.</msg>
+<arg>//*[@id="topActionSwitchLang"]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-23T19:41:53.074825" elapsed="0.616727"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-23T19:41:53.692970" level="INFO">Clicking element '//*[@id="lzdSwitchPop"]/div/div[2]/span'.</msg>
+<arg>//*[@id="lzdSwitchPop"]/div/div[2]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-23T19:41:53.692970" elapsed="22.028287"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-06-23T19:42:15.722273" level="INFO">Verifying element '//*[@id="topActionFeedback"]/a' contains exact text 'FEEDBACK'.</msg>
+<arg>//*[@id="topActionFeedback"]/a</arg>
+<arg>FEEDBACK</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-06-23T19:42:15.722273" elapsed="0.165194"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-06-23T19:42:15.888553" level="INFO">Verifying element '//*[@id="topActionSwitchLang"]' contains exact text 'เปลี่ยนภาษา'.</msg>
+<arg>//*[@id="topActionSwitchLang"]</arg>
+<arg>เปลี่ยนภาษา</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-06-23T19:42:15.888014" elapsed="0.024528"/>
+</kw>
+<kw name="Test Keyword 1">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Language is English</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-23T19:42:15.914535" elapsed="0.000650"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-23T19:42:15.915185" elapsed="2.193008"/>
+</kw>
+<status status="PASS" start="2024-06-23T19:42:15.913542" elapsed="2.194651"/>
+</kw>
+<status status="PASS" start="2024-06-23T19:41:28.784965" elapsed="49.324242"/>
+</test>
+<status status="PASS" start="2024-06-23T19:41:28.569365" elapsed="49.541851"/>
+</suite>
+<status status="PASS" start="2024-06-23T19:41:28.544483" elapsed="49.569721"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Exam H-Lab">Exam H-Lab</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test1">Exam H-Lab.Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

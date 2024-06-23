@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-06-23T19:38:12.306992" rpa="false" schemaversion="5">
+<suite id="s1" name="Test1" source="C:\Users\thiti\Desktop\Exam H-Lab\test1.robot">
+<test id="s1-t1" name="T001 Enter Shopee website, landing on home page with EN lang" line="23">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-23T19:38:12.550247" level="INFO">Opening browser 'Chrome' to base url 'https://shopee.co.th/'.</msg>
+<arg>${URL1}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-23T19:38:12.549245" elapsed="5.709871"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-23T19:38:18.260183" level="INFO">Clicking element '//*[@id="modal"]/div[1]/div[1]/div/div[3]/div[2]/button'.</msg>
+<arg>//*[@id="modal"]/div[1]/div[1]/div/div[3]/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-23T19:38:18.260183" elapsed="1.238287"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-23T19:38:19.498470" elapsed="2.289526"/>
+</kw>
+<status status="PASS" start="2024-06-23T19:38:12.548247" elapsed="9.240830"/>
+</test>
+<test id="s1-t2" name="T002 Enter Lazada website, landing on home page with EN lang" line="29">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-23T19:38:21.792176" level="INFO">Opening browser 'Chrome' to base url 'https://www.lazada.co.th/'.</msg>
+<arg>${URL2}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-23T19:38:21.792176" elapsed="24.317701"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-23T19:38:46.110409" elapsed="0.059537"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-23T19:38:46.171186" level="INFO">Clicking element '//*[@id="topActionSwitchLang"]/span'.</msg>
+<arg>//*[@id="topActionSwitchLang"]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-23T19:38:46.171186" elapsed="0.378912"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-23T19:38:46.550098" level="INFO">Clicking element '//*[@id="lzdSwitchPop"]/div/div[2]/span'.</msg>
+<arg>//*[@id="lzdSwitchPop"]/div/div[2]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-23T19:38:46.550098" elapsed="22.303290"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-06-23T19:39:08.853388" level="INFO">Verifying element '//*[@id="topActionFeedback"]/a' contains exact text 'FEEDBACK'.</msg>
+<arg>//*[@id="topActionFeedback"]/a</arg>
+<arg>FEEDBACK</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-06-23T19:39:08.853388" elapsed="0.097793"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-06-23T19:39:08.952204" level="INFO">Verifying element '//*[@id="topActionSwitchLang"]' contains exact text 'เปลี่ยนภาษา'.</msg>
+<arg>//*[@id="topActionSwitchLang"]</arg>
+<arg>เปลี่ยนภาษา</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-06-23T19:39:08.952204" elapsed="0.126140"/>
+</kw>
+<kw name="Test Keyword 1">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Language is English</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-23T19:39:09.080381" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-23T19:39:09.080381" elapsed="2.200045"/>
+</kw>
+<status status="PASS" start="2024-06-23T19:39:09.079370" elapsed="2.201056"/>
+</kw>
+<status status="PASS" start="2024-06-23T19:38:21.791165" elapsed="49.490237"/>
+</test>
+<test id="s1-t3" name="T003 Search for keywords “ baby toys “" line="38">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-23T19:39:11.283964" level="INFO">Opening browser 'Chrome' to base url 'https://www.lazada.co.th/'.</msg>
+<arg>${URL2}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-23T19:39:11.282946" elapsed="23.790182"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-23T19:39:35.074228" elapsed="0.064643"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-23T19:39:35.140163" level="INFO">Typing text 'baby toys' into text field '//*[@id="q"]'.</msg>
+<arg>//*[@id="q"]</arg>
+<arg>baby toys</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-23T19:39:35.138871" elapsed="0.503572"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-23T19:39:35.643459" level="INFO">Clicking element '//*[@id="topActionHeader"]/div/div[2]/div/div[2]/div/form/div/div[2]/a'.</msg>
+<arg>//*[@id="topActionHeader"]/div/div[2]/div/div[2]/div/form/div/div[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-23T19:39:35.643459" elapsed="22.642559"/>
+</kw>
+<kw name="Test Keyword 2">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Search button is working</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-23T19:39:58.287045" elapsed="0.000996"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-23T19:39:58.288041" elapsed="2.255420"/>
+</kw>
+<status status="PASS" start="2024-06-23T19:39:58.287045" elapsed="2.256416"/>
+</kw>
+<status status="PASS" start="2024-06-23T19:39:11.282946" elapsed="49.261809"/>
+</test>
+<test id="s1-t4" name="T004 Website display search result as a list" line="45">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-23T19:40:00.547173" level="INFO">Opening browser 'Chrome' to base url 'https://www.lazada.co.th/'.</msg>
+<arg>${URL2}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-23T19:40:00.547173" elapsed="24.599384"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-23T19:40:25.147545" level="INFO">Typing text 'baby toys' into text field '//*[@id="q"]'.</msg>
+<arg>//*[@id="q"]</arg>
+<arg>baby toys</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-23T19:40:25.147545" elapsed="0.234043"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-23T19:40:25.382982" level="INFO">Clicking element '//*[@id="topActionHeader"]/div/div[2]/div/div[2]/div/form/div/div[2]/a'.</msg>
+<arg>//*[@id="topActionHeader"]/div/div[2]/div/div[2]/div/form/div/div[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-23T19:40:25.382982" elapsed="22.762131"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-06-23T19:40:48.146120" level="INFO">Verifying element '//*[@id="root"]/div/div[2]/div[1]/div/div[1]/div[1]/div/div[1]/div/div/span[2]' contains exact text 'baby toys'.</msg>
+<arg>//*[@id="root"]/div/div[2]/div[1]/div/div[1]/div[1]/div/div[1]/div/div/span[2]</arg>
+<arg>baby toys</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-06-23T19:40:48.146120" elapsed="0.224902"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-06-23T19:40:48.849555" level="INFO">Element '//*[@id="root"]/div/div[2]/div[1]/div/div[1]/div[2]' contains text 'ของเล่น'.</msg>
+<arg>//*[@id="root"]/div/div[2]/div[1]/div/div[1]/div[2]</arg>
+<arg>ของเล่น</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2024-06-23T19:40:48.376033" elapsed="0.473522"/>
+</kw>
+<kw name="Test Keyword 3">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Searching items are found</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-23T19:40:48.850549" elapsed="0.001009"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-23T19:40:48.851558" elapsed="2.208613"/>
+</kw>
+<status status="PASS" start="2024-06-23T19:40:48.850549" elapsed="2.209622"/>
+</kw>
+<status status="PASS" start="2024-06-23T19:40:00.545287" elapsed="50.516322"/>
+</test>
+<status status="PASS" start="2024-06-23T19:38:12.307973" elapsed="158.754668"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Test1">Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
